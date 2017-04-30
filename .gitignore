@@ -1,0 +1,4 @@
+.env
+.idea
+debug.log
+node_modules

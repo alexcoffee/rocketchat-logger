@@ -1,0 +1,189 @@
+[
+  {
+    "msg": "connect",
+    "version": "1",
+    "support": [
+      "1",
+      "pre2",
+      "pre1"
+    ]
+  },
+  {
+    "msg": "method",
+    "method": "login",
+    "params": [
+      {
+        "resume": "YaDQOhI_9HYJc2KtLraYoC2ZFDXofU6gEsvktPxP3S1"
+      }
+    ],
+    "id": "1"
+  },
+  {
+    "msg": "sub",
+    "id": "wa5iftMoZ6xQd5A3y",
+    "name": "meteor.loginServiceConfiguration",
+    "params": []
+  },
+  {
+    "msg": "sub",
+    "id": "NJFLxZgSnJbNziGTd",
+    "name": "stream-notify-user",
+    "params": [
+      "hGEr7HB4ywjLZNJpf/message",
+      false
+    ]
+  },
+  {
+    "msg": "sub",
+    "id": "kHeGvMXv2CpzmS36L",
+    "name": "roles",
+    "params": []
+  },
+  {
+    "msg": "sub",
+    "id": "EqveTCb5zg5hWnjAG",
+    "name": "stream-notify-user",
+    "params": [
+      "hGEr7HB4ywjLZNJpf/rooms-changed",
+      false
+    ]
+  },
+  {
+    "msg": "sub",
+    "id": "iPyfMNXAmFc8wsrxr",
+    "name": "stream-notify-user",
+    "params": [
+      "hGEr7HB4ywjLZNJpf/subscriptions-changed",
+      false
+    ]
+  },
+  {
+    "msg": "sub",
+    "id": "Q5KxFDgnbhk2YreWM",
+    "name": "stream-notify-logged",
+    "params": [
+      "permissions-changed",
+      false
+    ]
+  },
+  {
+    "msg": "sub",
+    "id": "5biYK4iiisqztcQRc",
+    "name": "stream-notify-all",
+    "params": [
+      "public-settings-changed",
+      false
+    ]
+  },
+  {
+    "msg": "sub",
+    "id": "SdctAYiFNpMGEGMbX",
+    "name": "meteor_autoupdate_clientVersions",
+    "params": []
+  },
+  {
+    "msg": "sub",
+    "id": "R8MZpErwggQFngvqa",
+    "name": "userData",
+    "params": []
+  },
+  {
+    "msg": "sub",
+    "id": "7Kqy5k5ZueJZz4ubu",
+    "name": "activeUsers",
+    "params": []
+  },
+  {
+    "msg": "sub",
+    "id": "zoz8KFSDHz8qDBZLJ",
+    "name": "stream-notify-logged",
+    "params": [
+      "roles-change",
+      false
+    ]
+  },
+  {
+    "msg": "sub",
+    "id": "3EyNf3sXWHmajadEX",
+    "name": "stream-notify-all",
+    "params": [
+      "updateCustomSound",
+      false
+    ]
+  },
+  {
+    "msg": "sub",
+    "id": "R9K9WdctKCsTN5HN8",
+    "name": "stream-notify-all",
+    "params": [
+      "deleteCustomSound",
+      false
+    ]
+  },
+  {
+    "msg": "sub",
+    "id": "jKu5cqQjfzEzHCru3",
+    "name": "stream-notify-logged",
+    "params": [
+      "updateEmojiCustom",
+      false
+    ]
+  },
+  {
+    "msg": "sub",
+    "id": "4CmDCzwz6TPGtG2sT",
+    "name": "stream-notify-logged",
+    "params": [
+      "deleteEmojiCustom",
+      false
+    ]
+  },
+  {
+    "msg": "sub",
+    "id": "cH2xoKkEdAZoybPsT",
+    "name": "stream-notify-user",
+    "params": [
+      "hGEr7HB4ywjLZNJpf/otr",
+      false
+    ]
+  },
+  {
+    "msg": "sub",
+    "id": "3LvNcJ2K7bJyosvtd",
+    "name": "stream-notify-user",
+    "params": [
+      "hGEr7HB4ywjLZNJpf/webrtc",
+      false
+    ]
+  },
+  {
+    "msg": "sub",
+    "id": "eLH543FPdQGn4aCcq",
+    "name": "stream-notify-user",
+    "params": [
+      "hGEr7HB4ywjLZNJpf/notification",
+      false
+    ]
+  },
+  {
+    "msg": "sub",
+    "id": "KWo847eFZP46imeZ6",
+    "name": "stream-notify-logged",
+    "params": [
+      "updateAvatar",
+      false
+    ]
+  },
+  {
+    "msg": "sub",
+    "id": "hmAr8afazyDdBcM2x",
+    "name": "activeUsers",
+    "params": []
+  },
+  {
+    "msg": "sub",
+    "id": "Fgr6T7QByxfDZ9LT2",
+    "name": "userData",
+    "params": []
+  }
+]

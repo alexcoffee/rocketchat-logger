@@ -1,0 +1,15 @@
+{
+  "msg": "changed",
+  "collection": "users",
+  "id": "hGEr7HB4ywjLZNJpf",
+  "fields": {
+    "active": true,
+    "roles": [
+      "user"
+    ],
+    "services": {},
+    "status": "online",
+    "statusConnection": "online",
+    "utcOffset": -7
+  }
+}

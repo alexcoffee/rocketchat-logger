@@ -1,0 +1,26 @@
+{
+  "msg": "changed",
+  "collection": "stream-room-messages",
+  "id": "id",
+  "fields": {
+    "eventName": "koC4ts9d67omHjMGJ",
+    "args": [
+      {
+        "_id": "brF96tomF3QTZspNe",
+        "rid": "koC4ts9d67omHjMGJ",
+        "msg": "You are welcome!",
+        "ts": {
+          "$date": 1493512223253
+        },
+        "u": {
+          "_id": "qGRNoMzbmZ7sSH5ap",
+          "username": "Aries",
+          "name": null
+        },
+        "_updatedAt": {
+          "$date": 1493512223254
+        }
+      }
+    ]
+  }
+}
