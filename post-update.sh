@@ -13,8 +13,12 @@ echo "Host is stage-node"
 echo "User name is $USER"
 echo ""
 
-echo "Stopping node.. "
+echo -n "Stopping node.. "
 killall node
+echo 'DONE'
+
+echo -n "Saving log file.. "
+cp $HTML/debug.log $REPO/debug.log --backup=t
 echo 'DONE'
 
 echo -n "Clearing $HTML directory.. "
@@ -33,7 +37,7 @@ chmod g+w -R $HTML
 echo 'DONE'
 
 echo ""
-echo "Installing packages.. "
+echo -n "Installing packages.. "
 cd $HTML
 npm install
 echo 'DONE'
