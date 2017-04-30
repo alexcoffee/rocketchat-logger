@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^4.0.0",
-    "mysql": "^2.5.4"
+    "mysql": "^2.5.4",
+    "ws": "^2.3.1"
   }
 }
