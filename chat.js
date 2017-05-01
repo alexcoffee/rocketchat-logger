@@ -8,7 +8,7 @@ const util = require('util');
 const Socket = require('ws');
 const ws = new Socket(process.env.SOCKET);
 
-var log_file = fs.createWriteStream(__dirname + '/debug.log', {flags: 'w'});
+var log_file = fs.createWriteStream(__dirname + '/logs/debug.log', {flags: 'w'});
 
 ws.on('open', function open() {
     console.log('Socket connected');

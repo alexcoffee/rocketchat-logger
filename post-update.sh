@@ -18,7 +18,8 @@ killall node
 echo 'DONE'
 
 echo -n "Saving log file.. "
-cp $HTML/debug.log $REPO/debug.log --backup=t
+cp $HTML/logs/debug.log $REPO/debug.log --backup=t
+cp $HTML/logs/console.log $REPO/console.log --backup=t
 echo 'DONE'
 
 echo -n "Clearing $HTML directory.. "
@@ -44,6 +45,6 @@ echo 'DONE'
 
 echo ""
 echo "Starting node.. "
-node chat.js
+node chat.js &> logs/console.log
 
 echo 'DONE'
