@@ -45,6 +45,6 @@ echo 'DONE'
 
 echo ""
 echo "Starting node.. "
-node chat.js &> logs/console.log
+node chat.js |& tee logs/console.log
 
 echo 'DONE'
