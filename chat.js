@@ -2,34 +2,17 @@
 process.env.TZ = 'UTC';
 
 require('dotenv').config();
-
+const db = require('./db.js');
 const fs = require('fs');
-var util = require('util');
-const mysql = require('mysql');
-const socket = require('ws');
-
-const ws = new socket(process.env.SOCKET);
+const util = require('util');
+const Socket = require('ws');
+const ws = new Socket(process.env.SOCKET);
 
 var log_file = fs.createWriteStream(__dirname + '/debug.log', {flags: 'w'});
 
-var connection = mysql.createConnection({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USERNAME,
-    password: process.env.DB_PASSWORD,
-    database: process.env.DB_DATABASE
-});
-
-connection.connect(function (err) {
-    if (!err) {
-        console.log("Database connected");
-    } else {
-        console.log("Error connecting database: " + err.message);
-    }
-});
-
 ws.on('open', function open() {
     console.log('Socket connected');
-    login(ws);
+    login();
 });
 
 ws.on('close', function (port, msg) {
@@ -42,7 +25,7 @@ ws.on('message', function incoming(data, flags) {
     handleIncomingMessage(parse(data));
 });
 
-function login(ws) {
+function login() {
     var initFrames = JSON.parse(fs.readFileSync('login.json', 'utf8'));
 
     initFrames.forEach(function (frame) {
@@ -98,7 +81,7 @@ function isChatMessage(message) {
 }
 
 function parseChatMessage(message) {
-    args = message.fields.args;
+    var args = message.fields.args;
 
     return {
         room_id: args.rid,
@@ -112,14 +95,10 @@ function parseChatMessage(message) {
 function recordMessage(message) {
     console.log("new chat: " + JSON.stringify(message));
 
-    connection.query('INSERT INTO message SET ?', message, function (err, res) {
-
+    db.saveMessage(message, function (err, result) {
         if (err) {
-            console.log('Error while inserting: ' + err.message);
-            return;
+            console.log('error saving message: ' + err.toString());
         }
-
-        console.log('Last insert ID:', res.insertId);
     });
 }
 
