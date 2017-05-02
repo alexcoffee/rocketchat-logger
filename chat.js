@@ -77,11 +77,11 @@ function isChatMessage(message) {
         return false;
     }
 
-    return message.msg.fields.args !== undefined;
+    return message.fields.args !== undefined;
 }
 
 function parseChatMessage(message) {
-    var args = message.fields.args;
+    var args = message.fields.args[0];
 
     return {
         room_id: args.rid,
