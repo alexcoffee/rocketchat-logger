@@ -185,5 +185,32 @@
     "id": "Fgr6T7QByxfDZ9LT2",
     "name": "userData",
     "params": []
+  },
+  {
+    "msg": "sub",
+    "id": "u3WS2BdBmm5f6jQXo",
+    "name": "stream-room-messages",
+    "params": [
+      "koC4ts9d67omHjMGJ",
+      false
+    ]
+  },
+  {
+    "msg": "sub",
+    "id": "u3WS2BdBmm5f6jQXo",
+    "name": "stream-room-messages",
+    "params": [
+      "X8u7sLxGFfecigSAD",
+      false
+    ]
+  },
+  {
+    "msg": "sub",
+    "id": "u3WS2BdBmm5f6jQXo",
+    "name": "stream-room-messages",
+    "params": [
+      "N9k7jfy3bJ86fk9Fh",
+      false
+    ]
   }
 ]
