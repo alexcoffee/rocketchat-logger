@@ -32,3 +32,31 @@ exports.saveMessage = function (message, callback) {
 
     });
 };
+
+exports.getMessage = function (callback) {
+
+    pool.getConnection(function (err, connection) {
+
+        if (err) {
+            console.log(err);
+            callback(true);
+            return;
+        }
+
+        connection.query('SELECT * FROM message ORDER BY id DESC LIMIT 1;', null, function (err, results) {
+
+            connection.release(); // always put connection back in pool after last query
+
+            if (err) {
+                console.log(err);
+                callback(true);
+                return;
+            }
+
+            callback(false, results[0]);
+        });
+
+    });
+};
+
+
